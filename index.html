@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>學生個性決策樹測驗</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>學生個性測驗</h1>
+    <p>以下有 20 道生活情境問題，每題提供兩個選項。請仔細閱讀描述後選出最貼近你的選擇，最後按下「看結果」將顯示對應的個性類型。</p>
+    <form id="quiz-form"></form>
+    <button id="submit-btn" type="button">看結果</button>
+    <div id="result"></div>
+    <!-- 用於顯示答案統計的圖表 -->
+    <canvas id="analysisChart" style="display:none; width:100%; max-width:600px; height:300px;"></canvas>
+  </div>
+  <!-- 引入 Chart.js 用於視覺化分析 -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
